@@ -1,0 +1,458 @@
+91705@piyush MINGW64 /d/classroom12 (piyush)
+$ git branch sonal
+
+91705@piyush MINGW64 /d/classroom12 (piyush)
+$ git checkout sonal
+Switched to branch 'sonal'
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ pwd
+/d/classroom12
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ ls
+README.md  names.txt
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ touch sub.txt
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ code .
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git status
+On branch sonal
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        sub.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git add .
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git ststus
+git: 'ststus' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git status
+On branch sonal
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   sub.txt
+
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git log
+commit 3e0589eef38a48ec1d67d3c3dc046288f326b648 (HEAD -> sonal, origin/piyush, piyush)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:08:16 2023 +0530
+
+    names.txt added
+
+commit 826152352d058c1e03dd829d8705f87e5bc0dfc8
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 14:59:08 2023 +0530
+
+    piyush added a message
+
+commit 615f9eccc99f1db2b60a1e076cc30adab0f69577 (origin/main, origin/HEAD, main)
+Author: Shubham Raj <20BCS7505@cuchd.in>
+Date:   Sun Feb 12 14:52:10 2023 +0530
+
+    Initial commit
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git commit -m "sub.txt added"
+[sonal 9a475bd] sub.txt added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 sub.txt
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git log
+commit 9a475bd44cf7bf749ba9ca532fdac920a88f80d9 (HEAD -> sonal)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:17:51 2023 +0530
+
+    sub.txt added
+
+commit 3e0589eef38a48ec1d67d3c3dc046288f326b648 (origin/piyush, piyush)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:08:16 2023 +0530
+
+    names.txt added
+
+commit 826152352d058c1e03dd829d8705f87e5bc0dfc8
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 14:59:08 2023 +0530
+
+    piyush added a message
+
+commit 615f9eccc99f1db2b60a1e076cc30adab0f69577 (origin/main, origin/HEAD, main)
+Author: Shubham Raj <20BCS7505@cuchd.in>
+Date:   Sun Feb 12 14:52:10 2023 +0530
+
+    Initial commit
+sdc
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git status
+On branch sonal
+nothing to commit, working tree clean
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git push origin sonal
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'sonal' on GitHub by visiting:
+remote:      https://github.com/piyush168713/classroom12/pull/new/sonal
+remote:
+To https://github.com/piyush168713/classroom12.git
+ * [new branch]      sonal -> sonal
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ touch doc.txt
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ code .
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git status
+On branch sonal
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        doc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git add .
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git status
+On branch sonal
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   doc.txt
+
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git commit -m "doc.txt file added"
+[sonal 6fb2071] doc.txt file added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 doc.txt
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git log
+commit 6fb2071ca25aa9b2b713b2c8155bcc78edd976a4 (HEAD -> sonal, origin/sonal)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:21:22 2023 +0530
+
+    doc.txt file added
+
+commit 9a475bd44cf7bf749ba9ca532fdac920a88f80d9
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:17:51 2023 +0530
+
+    sub.txt added
+
+commit 3e0589eef38a48ec1d67d3c3dc046288f326b648 (origin/piyush, piyush)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:08:16 2023 +0530
+
+    names.txt added
+
+commit 826152352d058c1e03dd829d8705f87e5bc0dfc8
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 14:59:08 2023 +0530
+
+    piyush added a message
+
+commit 615f9eccc99f1db2b60a1e076cc30adab0f69577 (origin/main, origin/HEAD, main)
+Author: Shubham Raj <20BCS7505@cuchd.in>
+Date:   Sun Feb 12 14:52:10 2023 +0530
+
+    Initial commit
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git status
+On branch sonal
+nothing to commit, working tree clean
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git push origin sonal
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 387 bytes | 387.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/piyush168713/classroom12.git
+   9a475bd..6fb2071  sonal -> sonal
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git status
+On branch sonal
+nothing to commit, working tree clean
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git log
+commit 6fb2071ca25aa9b2b713b2c8155bcc78edd976a4 (HEAD -> sonal, origin/sonal)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:21:22 2023 +0530
+
+    doc.txt file added
+
+commit 9a475bd44cf7bf749ba9ca532fdac920a88f80d9
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:17:51 2023 +0530
+
+    sub.txt added
+
+commit 3e0589eef38a48ec1d67d3c3dc046288f326b648 (origin/piyush, piyush)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:08:16 2023 +0530
+
+    names.txt added
+
+commit 826152352d058c1e03dd829d8705f87e5bc0dfc8
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 14:59:08 2023 +0530
+
+    piyush added a message
+
+commit 615f9eccc99f1db2b60a1e076cc30adab0f69577 (origin/main, origin/HEAD, main)
+Author: Shubham Raj <20BCS7505@cuchd.in>
+Date:   Sun Feb 12 14:52:10 2023 +0530
+
+    Initial commit
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git reset 9a475bd44cf7bf749ba9ca532fdac920a88f80d9
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git status
+On branch sonal
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        doc.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ ls
+README.md  doc.txt  names.txt  sub.txt
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git add .
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git stash
+Saved working directory and index state WIP on sonal: 9a475bd sub.txt added
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ ls
+README.md  names.txt  sub.txt
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git status
+On branch sonal
+nothing to commit, working tree clean
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git log
+commit 9a475bd44cf7bf749ba9ca532fdac920a88f80d9 (HEAD -> sonal)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:17:51 2023 +0530
+
+    sub.txt added
+
+commit 3e0589eef38a48ec1d67d3c3dc046288f326b648 (origin/piyush, piyush)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:08:16 2023 +0530
+
+    names.txt added
+
+commit 826152352d058c1e03dd829d8705f87e5bc0dfc8
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 14:59:08 2023 +0530
+
+    piyush added a message
+
+commit 615f9eccc99f1db2b60a1e076cc30adab0f69577 (origin/main, origin/HEAD, main)
+Author: Shubham Raj <20BCS7505@cuchd.in>
+Date:   Sun Feb 12 14:52:10 2023 +0530
+
+    Initial commit
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git push origin sonal -f
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/piyush168713/classroom12.git
+ + 6fb2071...9a475bd sonal -> sonal (forced update)
+
+
+
+-- fetch the changes from other branches to the main branch
+-- or to other branch
+
+
+
+91705@piyush MINGW64 /d/classroom12 (sonal)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+91705@piyush MINGW64 /d/classroom12 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+91705@piyush MINGW64 /d/classroom12 (main)
+$ git log
+commit 615f9eccc99f1db2b60a1e076cc30adab0f69577 (HEAD -> main, origin/main, origin/HEAD)
+Author: Shubham Raj <20BCS7505@cuchd.in>
+Date:   Sun Feb 12 14:52:10 2023 +0530
+
+    Initial commit
+
+91705@piyush MINGW64 /d/classroom12 (main)
+$ git fetch --all --prune
+Fetching origin
+Fetching upstream
+remote: Enumerating objects: 2, done.
+remote: Counting objects: 100% (2/2), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), 1.21 KiB | 206.00 KiB/s, done.
+From https://github.com/shubhamraj7505/classroom12
+ * [new branch]      main       -> upstream/main
+
+91705@piyush MINGW64 /d/classroom12 (main)
+$ git reset --hard upstream/main
+HEAD is now at 20dd71f Merge pull request #2 from piyush168713/sonal
+
+91705@piyush MINGW64 /d/classroom12 (main)
+$ git log
+commit 20dd71f4d086252562ad7b38a6521a0c5711df32 (HEAD -> main, upstream/main)
+Merge: 24918f0 9a475bd
+Author: Shubham Raj <20BCS7505@cuchd.in>
+Date:   Sun Feb 12 15:52:09 2023 +0530
+
+    Merge pull request #2 from piyush168713/sonal
+
+    Sonal
+
+commit 9a475bd44cf7bf749ba9ca532fdac920a88f80d9 (origin/sonal, sonal)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:17:51 2023 +0530
+
+    sub.txt added
+
+commit 3e0589eef38a48ec1d67d3c3dc046288f326b648 (origin/piyush, piyush)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:08:16 2023 +0530
+
+
+91705@piyush MINGW64 /d/classroom12 (main)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/piyush168713/classroom12.git
+   615f9ec..20dd71f  main -> main
+
+
+
+
+-- if changes were made in future in the main repo from where we forked then, fetch changes from the file 
+-- commands
+
+91705@piyush MINGW64 /d/classroom12 (main)
+$ git pull upstream main
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), 682 bytes | 97.00 KiB/s, done.
+From https://github.com/shubhamraj7505/classroom12
+ * branch            main       -> FETCH_HEAD
+   20dd71f..3344241  main       -> upstream/main
+Updating 20dd71f..3344241
+Fast-forward
+ sub.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+91705@piyush MINGW64 /d/classroom12 (main)
+$ git log
+commit 33442413f2cd43f5d59d46a0d264160a894032da (HEAD -> main, upstream/main)
+Author: Shubham Raj <20BCS7505@cuchd.in>
+Date:   Sun Feb 12 16:10:38 2023 +0530
+
+    Update sub.txt
+
+commit 20dd71f4d086252562ad7b38a6521a0c5711df32 (origin/main, origin/HEAD)
+Merge: 24918f0 9a475bd
+Author: Shubham Raj <20BCS7505@cuchd.in>
+Date:   Sun Feb 12 15:52:09 2023 +0530
+
+    Merge pull request #2 from piyush168713/sonal
+
+    Sonal
+
+commit 9a475bd44cf7bf749ba9ca532fdac920a88f80d9 (origin/sonal, sonal)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:17:51 2023 +0530
+
+    sub.txt added
+
+commit 3e0589eef38a48ec1d67d3c3dc046288f326b648 (origin/piyush, piyush)
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 15:08:16 2023 +0530
+
+    names.txt added
+
+commit 24918f06ca3ebb512835ce248356c31c7da4a7e5
+Merge: 615f9ec 8261523
+Author: Shubham Raj <20BCS7505@cuchd.in>
+Date:   Sun Feb 12 15:07:09 2023 +0530
+
+    Merge pull request #1 from piyush168713/piyush
+
+    piyush added a message
+
+commit 826152352d058c1e03dd829d8705f87e5bc0dfc8
+Author: = <kumarpiyush25777@gmail.com>
+Date:   Sun Feb 12 14:59:08 2023 +0530
+
+    piyush added a message
+
+commit 615f9eccc99f1db2b60a1e076cc30adab0f69577
+Author: Shubham Raj <20BCS7505@cuchd.in>
+Date:   Sun Feb 12 14:52:10 2023 +0530
+
+    Initial commit
+
+91705@piyush MINGW64 /d/classroom12 (main)
+$ git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/piyush168713/classroom12.git
+   20dd71f..3344241  main -> main
+
+91705@piyush MINGW64 /d/classroom12 (main)
+$ git remote -v
+origin  https://github.com/piyush168713/classroom12.git (fetch)
+origin  https://github.com/piyush168713/classroom12.git (push)
+upstream        https://github.com/shubhamraj7505/classroom12.git (fetch)
+upstream        https://github.com/shubhamraj7505/classroom12.git (push)
+
+
+
